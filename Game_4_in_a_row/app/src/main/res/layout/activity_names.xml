@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="#404040"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.game_4_in_a_row.Names">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:id="@+id/text_NAME_title"
+        android:text="@string/text_NAME_title"
+        android:textColor="#66a3ff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/button_next"
+        android:background="@drawable/buttonshape2"
+        android:textColor="@drawable/buttontext"
+        android:layout_alignTop="@+id/button_back"
+        android:layout_alignRight="@+id/text_NAME_title"
+        android:layout_alignEnd="@+id/text_NAME_title" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/button_back"
+        android:background="@drawable/buttonshape2"
+        android:textColor="@drawable/buttontext"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/text_NAME_title"
+        android:layout_alignStart="@+id/text_NAME_title" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMOPQRSTUVWXYZ1234567890אבגדהוזחטיכלמנסעפצקרשתףץךםן"
+        android:id="@+id/player2_text"
+        android:textSize="40dp"
+        android:hint="Player2"
+        android:maxLength="10"
+        android:layout_above="@+id/button_next"
+        android:layout_alignLeft="@+id/player1_textv"
+        android:layout_alignStart="@+id/player1_textv"
+        android:layout_marginBottom="58dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMOPQRSTUVWXYZ1234567890אבגדהוזחטיכלמנסעפצקרשתףץךםן"
+        android:id="@+id/player1_textv"
+        android:textSize="40dp"
+        android:hint="Player1"
+        android:maxLength="10"
+        android:layout_above="@+id/player2_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp" />
+
+
+</RelativeLayout>
